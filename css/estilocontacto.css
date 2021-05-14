@@ -1,0 +1,130 @@
+#grilla {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 150px auto 134px;
+  grid-template-areas: "header" "main" "footer";
+  /*---------------------------MAIN INDEX---------------------------------*/ }
+  #grilla .main {
+    grid-area: main; }
+    #grilla .main .banner {
+      grid-area: banner;
+      background-color: #ececec;
+      padding-left: 1.25rem;
+      padding-top: calc(1.625rem + 4.5vw);
+      padding-bottom: calc(1.625rem + 4.5vw); }
+      @media (min-width: 1200px) {
+        #grilla .main .banner {
+          padding-top: 5rem; } }
+      @media (min-width: 1200px) {
+        #grilla .main .banner {
+          padding-bottom: 5rem; } }
+      #grilla .main .banner__texto {
+        margin: 0;
+        font-size: calc(1.4375rem + 2.25vw);
+        font-family: 'Playfair Display', serif;
+        color: #272727; }
+        @media (min-width: 1200px) {
+          #grilla .main .banner__texto {
+            font-size: 3.125rem; } }
+    #grilla .main .contacto {
+      display: grid;
+      margin-top: calc(1.4375rem + 2.25vw);
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: "titulo" "descripcion" "datos" "form";
+      margin-bottom: 30px;
+      margin-left: calc(1.4375rem + 2.25vw);
+      margin-right: calc(1.4375rem + 2.25vw); }
+      @media (min-width: 1200px) {
+        #grilla .main .contacto {
+          margin-top: 3.125rem; } }
+      @media (min-width: 1200px) {
+        #grilla .main .contacto {
+          margin-left: 3.125rem; } }
+      @media (min-width: 1200px) {
+        #grilla .main .contacto {
+          margin-right: 3.125rem; } }
+      #grilla .main .contacto .titulo {
+        grid-area: titulo;
+        display: flex;
+        align-items: flex-end; }
+        #grilla .main .contacto .titulo__texto {
+          margin: 0;
+          font-size: calc(1.3125rem + 0.75vw);
+          font-family: 'Poppins', sans-serif;
+          color: #272727; }
+          @media (min-width: 1200px) {
+            #grilla .main .contacto .titulo__texto {
+              font-size: 1.875rem; } }
+      #grilla .main .contacto .descripcion {
+        grid-area: descripcion;
+        display: flex;
+        font-size: 0.9375rem;
+        font-family: 'Poppins', sans-serif;
+        color: #272727; }
+        #grilla .main .contacto .descripcion__texto {
+          padding: 0;
+          margin: 0 0 0 14px; }
+      #grilla .main .contacto .datos {
+        grid-area: datos;
+        display: flex;
+        flex-direction: row; }
+        #grilla .main .contacto .datos__pin {
+          align-self: center; }
+        #grilla .main .contacto .datos__img {
+          margin-right: 15px;
+          height: 55px;
+          width: auto; }
+        #grilla .main .contacto .datos__tel, #grilla .main .contacto .datos__mail {
+          display: flex;
+          flex-direction: column;
+          margin-right: 25px;
+          align-self: center; }
+        #grilla .main .contacto .datos__telefono, #grilla .main .contacto .datos__correo {
+          margin: 0;
+          font-size: 20px;
+          font-family: 'Poppins', sans-serif;
+          color: #272727; }
+        #grilla .main .contacto .datos__numero, #grilla .main .contacto .datos__direccionCorreo {
+          margin: 0;
+          font-family: 'Poppins', sans-serif;
+          color: #272727; }
+      #grilla .main .contacto .form {
+        grid-area: form;
+        margin-top: calc(1.3125rem + 0.75vw);
+        display: flex;
+        flex-direction: column; }
+        @media (min-width: 1200px) {
+          #grilla .main .contacto .form {
+            margin-top: 1.875rem; } }
+        #grilla .main .contacto .form__enviame {
+          display: flex;
+          font-size: 25px;
+          font-family: 'Poppins', sans-serif;
+          color: #272727;
+          margin-top: 30px;
+          margin-bottom: 30px; }
+        #grilla .main .contacto .form__config, #grilla .main .contacto .form__mensaje {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-family: 'Poppins', sans-serif;
+          border: #f3f3f3 solid 0.5px;
+          background-color: #fafafa;
+          height: 50px;
+          width: 100%; }
+        #grilla .main .contacto .form__mensaje {
+          font-size: 17px;
+          height: 150px;
+          width: 100%; }
+        #grilla .main .contacto .form__contenedorBoton {
+          display: flex;
+          margin-top: 20px;
+          margin-left: 5px;
+          margin-right: 25px; }
+        #grilla .main .contacto .form__conti {
+          color: white;
+          font-family: var(--bs-font-sans-serif);
+          text-decoration: none; }
+        #grilla .main .contacto .form__form {
+          width: 100%; }

@@ -1,0 +1,174 @@
+@import "../node_modules/rfs/scss";
+
+#grilla{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px auto 134px;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
+
+    /*-------------------MAIN INDEX----------------------*/
+    #mainIndex{
+        grid-area: main;
+        margin-top: 50px;
+        
+        .row{
+            --bs-gutter-x: 0;
+        }
+
+        #bienvenida{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 20% 20% 60%;
+            grid-template-areas:    "titulo1"
+                                    "titulo2"
+                                    "prologo"
+        ;
+        
+            #titulo1{
+                grid-area: titulo1;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                @include font-size(80px);
+                font-family: 'Playfair Display', serif;
+                margin: 0;
+            }
+            #titulo2{
+                grid-area: titulo2;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include font-size(100px);
+                font-family: 'Playfair Display', serif;
+                margin: 0;
+            }
+            .prologo{
+                grid-area: prologo;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                text-align: left;
+                @include font-size(25px);
+                @include margin-top(30px);
+                margin-left: 50px;
+                margin-right: 50px;
+                color: rgb(87, 87, 87);
+                font-family: "amiri";
+            }
+        } 
+        
+        .img_1{
+            @include margin-top(20px);
+        }
+
+        .seccion2{
+            @include margin-top (100px);
+            align-items: center;
+            justify-content: center;
+        }
+
+        .seccion2_titulo{  
+            grid-area: titulo;
+            display: flex;
+            justify-self: center;
+            align-self: center;
+            font-family: "amiri"bold;
+            @include font-size(35px);
+            @include margin-left(50px);
+            @include margin-right(50px);
+        }
+        .seccion2_parrafo{
+          
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            @include font-size(25px);
+            margin-top: 100px;
+            color: rgb(87, 87, 87);
+            font-family: "amiri";
+            @include margin-left(50px);
+            @include margin-right(100px);
+        }
+        .seccion2_img{
+            display: flex;
+            @include margin-top(30px);
+            justify-content: center;
+            align-items: center;
+            max-height: 600px;
+            overflow: hidden;
+        }
+
+        .img_2{
+            margin-left: 100px;
+            object-fit: cover;
+        }
+    }
+}
+/*-------------------jquery 1200px----------------------*/
+@media only screen and (max-width: 1200px){
+    #grilla{
+        grid-template-rows: 120px auto 134px;
+    /*-------------------MAIN INDEX----------------------*/
+        #mainIndex{
+            margin-top: 15px;
+            
+            .mediaQ{
+                justify-content: center;
+                    #bienvenida{
+                    grid-template-rows: 30% 20% 50%;
+                
+                    .prologo{
+                        align-items: center;
+                    }
+                }
+            }
+
+            .seccion2_parrafo{
+                margin-top: 50px;
+
+            }
+
+            .img_2{
+                margin-left: 0px;
+            }
+        }    
+    }
+}
+
+/*-------------------jquery 768px----------------------*/
+@media only screen and (max-width: 768px){
+    #grilla{
+        grid-template-rows: 110px auto 134px;
+            /*-------------------MAIN INDEX----------------------*/
+        #mainIndex{
+            .mediaQ{
+                #bienvenida{
+                    grid-template-rows: 20% 20% 60%;
+                    .prologo{
+                        font-size: 15px;
+                        margin:0;
+                    }
+                }
+            }
+                .seccion2_parrafo{
+                    font-size: 15px;
+                }
+            
+        }
+    }
+}
+
+/*-------------------jquery 768px----------------------*/
+@media only screen and (max-width: 500px){
+    #grilla{
+        
+            /*-------------------MAIN INDEX----------------------*/
+        #mainIndex{
+            .seccion2_parrafo{
+                font-size: 15px;
+            }
+        }
+    }
+}

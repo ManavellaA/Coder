@@ -1,0 +1,177 @@
+@import "../node_modules/rfs/scss";
+
+body{
+    background-color: #ffffff!important;
+    margin: 0;
+
+    /*-----------------HEADER----------------*/
+
+    #header{
+        grid-area: header;
+        z-index: 1;
+        /*----------------- NAV----------------*/
+        .marca{
+            font-family: 'Monsieur La Doulaise', cursive;
+            @include font-size(70px);
+            color: black;
+            margin-left: 50px;
+        }
+        .navbar-collapse{
+            justify-content: center!important;
+        
+            .sepMenu{
+                text-decoration: none;
+                color: rgb(19, 19, 19);
+                @include margin-right(40px);
+                font-family: "amiri";
+                @include font-size (18px);
+                transition: all, 400ms;
+            }
+                .sepMenu:hover{
+                    color: crimson;
+                }    
+        }    
+    }
+    /*-----------------FOOTER----------------*/
+
+    #footer{
+        grid-area: footer;
+        @include margin-top(30px);
+        background: rgb(212,81,101);
+        background: radial-gradient(circle, rgba(212,81,101,0.7063200280112045) 0%, rgba(99,10,10,0.6110819327731092) 100%);
+        display: grid; 
+        grid-template-columns: 33% 34% 33%; 
+        grid-template-rows: 33% 34% 33%; 
+        grid-template-areas:    "ayuda sigueme  ."
+                                "  .  redes   ."
+                                "  .     .    firma"
+        ;    
+    
+
+        #ayuda{
+            grid-area: ayuda;
+            display: flex;
+            align-items:flex-start;
+            margin-top: 15px;
+            margin-left: 10px;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(255, 255, 255);
+            font-size: 13px;
+        }
+
+        #redes{
+            grid-area: redes;
+            display: flex;
+            flex-direction: row;
+            font-family: 'Poppins', sans-serif;
+            justify-content: center;
+            align-items:center;
+            margin-top: 5px;
+        
+
+            .imgFace{
+                height: auto;
+                width: 70px;
+                margin: 0;
+            }
+
+            .imgInsta{
+                height: auto;
+                width: 52px;
+                margin: 0;
+            }
+        }
+
+        #firma{
+            grid-area: firma;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            font-family: 'Poppins', sans-serif;
+            font-size: 13px;
+            margin-right: 5px;
+            color: rgb(255, 255, 255);
+        }
+
+        #sigueme{
+            grid-area: sigueme;
+            display: flex;
+            justify-content: center;
+            align-items:flex-end;
+            @include font-size (20px);
+            font-family: 'Poppins', sans-serif;
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+    }
+}
+
+/*-------------------1024px----------------------*/
+
+@media only screen and (max-width: 1199px){
+    body{
+    /*-----------------HEADER----------------*/
+        #header{
+            grid-area: header;
+            /*----------------- NAV----------------*/
+            .navbar-collapse{
+
+                .sepMenu{
+                    display: block;
+                    text-align:center;
+                    @include margin-top(10px);
+                    @include font-size (20px);
+                }
+            }
+        }        
+
+        #footer{
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            grid-template-rows: 33% 34% 33%; 
+            grid-template-areas:    "ayuda sigueme  ."
+                                    "  .  redes   ."
+                                    "  .     firma    firma"
+            ;    
+        }    
+    }
+}
+/*-------------------768px----------------------*/
+
+@media only screen and (max-width: 768px){
+    body{
+    /*-----------------HEADER----------------*/
+        #header{
+            .marca{
+                margin-left: 0!important;
+            }
+
+            .navbar-collapse{
+           
+                .sepMenu{
+                    @include font-size (15px);
+                }
+            }
+        }
+    /*-----------------FOOTER----------------*/
+
+        #footer{
+            display: grid;
+            grid-template-columns: 10% 80% 10%;
+            grid-template-rows: 33% 34% 33%; 
+            grid-template-areas:    " . sigueme sigueme"
+                                    " . redes redes"
+                                    " ayuda firma firma"
+            ;
+
+            #sigueme{
+                font-size: 16px;
+            }
+
+            #firma{
+                margin-bottom: 0;
+            }
+        } 
+    }
+}

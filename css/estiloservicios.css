@@ -1,0 +1,70 @@
+#grilla {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px auto 134px;
+  grid-template-areas: "header" "main" "footer";
+  /*-------------------------------MAIN INDEX--------------------------------------*/ }
+  #grilla #grillaMain {
+    display: grid;
+    margin-top: calc(1.3125rem + 0.75vw);
+    grid-template-columns: 95%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a" "b" "c";
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 1200px) {
+      #grilla #grillaMain {
+        margin-top: 1.875rem; } }
+    #grilla #grillaMain #flexSec1 {
+      grid-area: a;
+      display: flex;
+      flex-direction: column;
+      background-image: url(../img/Disenadora.png);
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      margin-top: 30px;
+      padding-top: 80px;
+      padding-bottom: 80px; }
+    #grilla #grillaMain #flexSec2 {
+      grid-area: b;
+      background-image: url(../img/ProductoraModa.jpg);
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      margin-top: 30px; }
+    #grilla #grillaMain #flexSec3 {
+      grid-area: c;
+      background-image: url(../img/AsesoriaImagen.jpg);
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      margin-top: 30px; }
+    #grilla #grillaMain .itemFlex {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    #grilla #grillaMain .hFlex {
+      display: flex;
+      flex-direction: column;
+      font-size: calc(1.34375rem + 1.125vw);
+      font-family: "amiri";
+      color: white;
+      text-shadow: 0.1em 0.1em 0.05em #333; }
+      @media (min-width: 1200px) {
+        #grilla #grillaMain .hFlex {
+          font-size: 2.1875rem; } }
+    #grilla #grillaMain .subitemFlex {
+      display: flex;
+      flex-direction: column;
+      font-family: "amiri";
+      align-items: center;
+      color: white;
+      text-shadow: 0.1em 0.1em 0.05em #333; }
+    #grilla #grillaMain .pItems {
+      margin: 0;
+      font-size: 1.25rem; }

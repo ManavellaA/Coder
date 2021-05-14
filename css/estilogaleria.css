@@ -1,0 +1,36 @@
+#grilla {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px auto 134px;
+  grid-template-areas: "header" "main" "footer";
+  /*-------------------------------MAIN INDEX--------------------------------------*/ }
+  #grilla #grillaTitulo1 {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+    grid-template-areas: "tituloModa" "galeriaModelos"; }
+    #grilla #grillaTitulo1 .titulo {
+      grid-area: tituloModa;
+      font-size: 35px;
+      font-family: 'Playfair Display', serif;
+      color: #272727;
+      background-color: #ececec;
+      padding-left: 20px;
+      padding-top: 80px;
+      padding-bottom: 80px; }
+      #grilla #grillaTitulo1 .titulo h1 {
+        margin: 0 !important;
+        margin-block-end: 0;
+        padding: 0;
+        font-size: 50px !important; }
+    #grilla #grillaTitulo1 .galeriaModelos {
+      grid-area: galeriaModelos;
+      align-content: flex-start;
+      margin: 0; }
+      #grilla #grillaTitulo1 .galeriaModelos .imgGaleria {
+        padding: 15px;
+        border-radius: 20px;
+        transition: all .1s ease-in-out; }
+      #grilla #grillaTitulo1 .galeriaModelos .imgGaleria:hover {
+        transform: scale(2); }

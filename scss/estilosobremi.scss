@@ -1,0 +1,73 @@
+@import "../node_modules/rfs/scss";
+
+.grilla{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px auto 134px;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
+
+
+    /*-------------------------------MAIN INDEX--------------------------------------*/
+    .main{
+        grid-area: main;
+        .card{
+            flex-direction: row!important;
+        }
+        .parrafo{
+            @include font-size (25px);
+            font-family: 'Poppins', sans-serif;
+            color: rgb(87, 87, 87);
+            text-align: center;
+        }
+        .alineacion{
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+        }
+
+        .main_container1{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+
+            .main_container1_titulo1{            
+                @include font-size(30px);
+                font-family: 'Playfair Display', serif;
+                color: rgb(39, 39, 39);
+                @include margin-top(100px);
+            }
+        }
+    }
+}
+/*-------------------jquery 992px----------------------*/
+@media only screen and (max-width: 992px){
+    .grilla{
+        .main{
+            .parrafo{
+                font-size: 1.1em;
+            }
+        }
+    }
+}
+/*-------------------jquery 768px----------------------*/
+@media only screen and (max-width: 768px){
+    .grilla{
+        .main{
+            .parrafo{
+                font-size: 1em;
+            }
+        }
+    }
+}
+/*-------------------jquery 620px----------------------*/
+@media only screen and (max-width: 500px){
+    .grilla{
+        .main{
+            .parrafo{
+                font-size: 8px;
+            }
+        }
+    }
+}

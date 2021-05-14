@@ -1,0 +1,90 @@
+@import "../node_modules/rfs/scss";
+
+#grilla{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px auto 134px;
+    grid-template-areas:    "header"
+                            "main"
+                            "footer";
+
+
+    /*-------------------------------MAIN INDEX--------------------------------------*/
+        
+
+    #grillaMain{
+        display: grid;
+        @include margin-top(30px);
+        grid-template-columns: 95%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:    "a"
+                                "b"
+                                "c";
+        justify-content: center;
+        align-items: center;
+
+        #flexSec1{
+            grid-area: a;
+            display: flex;
+            flex-direction: column;
+            background-image: url(../img/Disenadora.png);
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            margin-top: 30px;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        #flexSec2{
+            grid-area: b;
+            background-image: url(../img/ProductoraModa.jpg);
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin-top: 30px;
+        }
+
+        #flexSec3{
+            grid-area: c;
+            background-image: url(../img/AsesoriaImagen.jpg);
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            margin-top: 30px;
+        }
+
+        .itemFlex{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hFlex{
+            display: flex;
+            flex-direction: column;
+            @include font-size (35px);
+            font-family: "amiri";
+            color: white;
+            text-shadow: 0.1em 0.1em 0.05em #333
+        }
+
+        .subitemFlex{
+            display: flex;
+            flex-direction: column;
+            font-family: "amiri";
+            align-items: center;
+            color: white;
+            text-shadow: 0.1em 0.1em 0.05em #333
+        }
+
+        .pItems{
+            margin: 0;
+            @include font-size (20px);
+        }
+    }
+}        

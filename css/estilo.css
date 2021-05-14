@@ -1,0 +1,124 @@
+body {
+  background-color: #ffffff !important;
+  margin: 0;
+  /*-----------------HEADER----------------*/
+  /*-----------------FOOTER----------------*/ }
+  body #header {
+    grid-area: header;
+    z-index: 1;
+    /*----------------- NAV----------------*/ }
+    body #header .marca {
+      font-family: 'Monsieur La Doulaise', cursive;
+      font-size: calc(1.5625rem + 3.75vw);
+      color: black;
+      margin-left: 50px; }
+      @media (min-width: 1200px) {
+        body #header .marca {
+          font-size: 4.375rem; } }
+    body #header .navbar-collapse {
+      justify-content: center !important; }
+      body #header .navbar-collapse .sepMenu {
+        text-decoration: none;
+        color: #131313;
+        margin-right: calc(1.375rem + 1.5vw);
+        font-family: "amiri";
+        font-size: 1.125rem;
+        transition: all, 400ms; }
+        @media (min-width: 1200px) {
+          body #header .navbar-collapse .sepMenu {
+            margin-right: 2.5rem; } }
+      body #header .navbar-collapse .sepMenu:hover {
+        color: crimson; }
+  body #footer {
+    grid-area: footer;
+    margin-top: calc(1.3125rem + 0.75vw);
+    background: #d45165;
+    background: radial-gradient(circle, rgba(212, 81, 101, 0.70632) 0%, rgba(99, 10, 10, 0.611082) 100%);
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: 33% 34% 33%;
+    grid-template-areas: "ayuda sigueme  ." "  .  redes   ." "  .     .    firma"; }
+    @media (min-width: 1200px) {
+      body #footer {
+        margin-top: 1.875rem; } }
+    body #footer #ayuda {
+      grid-area: ayuda;
+      display: flex;
+      align-items: flex-start;
+      margin-top: 15px;
+      margin-left: 10px;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      font-size: 13px; }
+    body #footer #redes {
+      grid-area: redes;
+      display: flex;
+      flex-direction: row;
+      font-family: 'Poppins', sans-serif;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px; }
+      body #footer #redes .imgFace {
+        height: auto;
+        width: 70px;
+        margin: 0; }
+      body #footer #redes .imgInsta {
+        height: auto;
+        width: 52px;
+        margin: 0; }
+    body #footer #firma {
+      grid-area: firma;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      margin-right: 5px;
+      color: white; }
+    body #footer #sigueme {
+      grid-area: sigueme;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-size: 1.25rem;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      margin: 0; }
+
+/*-------------------1024px----------------------*/
+@media only screen and (max-width: 1199px) {
+  body {
+    /*-----------------HEADER----------------*/ }
+    body #header {
+      grid-area: header;
+      /*----------------- NAV----------------*/ }
+      body #header .navbar-collapse .sepMenu {
+        display: block;
+        text-align: center;
+        margin-top: 0.625rem;
+        font-size: 1.25rem; }
+    body #footer {
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+      grid-template-rows: 33% 34% 33%;
+      grid-template-areas: "ayuda sigueme  ." "  .  redes   ." "  .     firma    firma"; } }
+
+/*-------------------768px----------------------*/
+@media only screen and (max-width: 768px) {
+  body {
+    /*-----------------HEADER----------------*/
+    /*-----------------FOOTER----------------*/ }
+    body #header .marca {
+      margin-left: 0 !important; }
+    body #header .navbar-collapse .sepMenu {
+      font-size: 0.9375rem; }
+    body #footer {
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+      grid-template-rows: 33% 34% 33%;
+      grid-template-areas: " . sigueme sigueme" " . redes redes" " ayuda firma firma"; }
+      body #footer #sigueme {
+        font-size: 16px; }
+      body #footer #firma {
+        margin-bottom: 0; } }
