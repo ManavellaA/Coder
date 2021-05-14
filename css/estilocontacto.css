@@ -67,12 +67,11 @@
           margin: 0 0 0 14px; }
       #grilla .main .contacto .datos {
         grid-area: datos;
+        margin-top: 1.25rem;
         display: flex;
         flex-direction: row; }
-        #grilla .main .contacto .datos__pin {
-          align-self: center; }
         #grilla .main .contacto .datos__img {
-          margin-right: 15px;
+          display: inline-block;
           height: 55px;
           width: auto; }
         #grilla .main .contacto .datos__tel, #grilla .main .contacto .datos__mail {
@@ -82,11 +81,13 @@
           align-self: center; }
         #grilla .main .contacto .datos__telefono, #grilla .main .contacto .datos__correo {
           margin: 0;
+          display: inline-block;
           font-size: 20px;
           font-family: 'Poppins', sans-serif;
           color: #272727; }
         #grilla .main .contacto .datos__numero, #grilla .main .contacto .datos__direccionCorreo {
           margin: 0;
+          display: inline-block;
           font-family: 'Poppins', sans-serif;
           color: #272727; }
       #grilla .main .contacto .form {
@@ -119,9 +120,9 @@
           width: 100%; }
         #grilla .main .contacto .form__contenedorBoton {
           display: flex;
-          margin-top: 20px;
-          margin-left: 5px;
-          margin-right: 25px; }
+          justify-content: flex-start;
+          margin-top: 1.25rem;
+          margin-left: 0.625rem; }
         #grilla .main .contacto .form__conti {
           color: white;
           font-family: var(--bs-font-sans-serif);

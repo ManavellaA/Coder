@@ -2,14 +2,14 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 150px auto 134px;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header" "main" "footer";
   /*-------------------------------MAIN INDEX--------------------------------------*/ }
   #grilla #grillaMain {
     display: grid;
     margin-top: calc(1.3125rem + 0.75vw);
     grid-template-columns: 95%;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "a" "b" "c";
+    grid-template-areas: "a" "b" "c";
     justify-content: center;
     align-items: center; }
     @media (min-width: 1200px) {
@@ -23,6 +23,7 @@
       background-size: cover;
       background-position: top;
       background-repeat: no-repeat;
+      border-radius: 10px;
       margin-top: 30px;
       padding-top: 80px;
       padding-bottom: 80px; }
@@ -32,6 +33,7 @@
       background-size: cover;
       background-position: top;
       background-repeat: no-repeat;
+      border-radius: 10px;
       padding-top: 80px;
       padding-bottom: 80px;
       margin-top: 30px; }
@@ -41,6 +43,7 @@
       background-size: cover;
       background-position: top;
       background-repeat: no-repeat;
+      border-radius: 10px;
       padding-top: 80px;
       padding-bottom: 80px;
       margin-top: 30px; }

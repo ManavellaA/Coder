@@ -65,13 +65,12 @@
             }
             .datos{
             grid-area: datos;
+            @include margin-top (20px);
             display: flex;
             flex-direction: row;
-                &__pin{
-                    align-self: center;  
-                }
+
                 &__img{
-                    margin-right: 15px;
+                    display: inline-block;
                     height: 55px;
                     width: auto;
                 }
@@ -83,12 +82,14 @@
                 }
                 &__telefono{
                     margin: 0;
+                    display: inline-block;
                     font-size: 20px;
                     font-family: 'Poppins', sans-serif;
                     color: rgb(39, 39, 39);
                 }
                 &__numero{
                     margin: 0;
+                    display: inline-block;
                     font-family: 'Poppins', sans-serif;
                     color: rgb(39, 39, 39);
                 }    
@@ -140,9 +141,9 @@
             
                 &__contenedorBoton{
                     display: flex;
-                    margin-top: 20px;
-                    margin-left: 5px;
-                    margin-right: 25px;
+                    justify-content: flex-start;
+                    @include margin-top (20px);
+                    @include margin-left (10px);
                 }
                 
                 &__conti{
