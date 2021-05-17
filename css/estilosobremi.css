@@ -7,7 +7,18 @@
   .grilla .main {
     grid-area: main; }
     .grilla .main .card {
-      flex-direction: row !important; }
+      margin-left: calc(1.625rem + 4.5vw);
+      margin-right: calc(1.625rem + 4.5vw);
+      margin-top: calc(1.3125rem + 0.75vw); }
+      @media (min-width: 1200px) {
+        .grilla .main .card {
+          margin-left: 5rem; } }
+      @media (min-width: 1200px) {
+        .grilla .main .card {
+          margin-right: 5rem; } }
+      @media (min-width: 1200px) {
+        .grilla .main .card {
+          margin-top: 1.875rem; } }
     .grilla .main .parrafo {
       font-size: calc(1.28125rem + 0.375vw);
       font-family: 'Poppins', sans-serif;
@@ -27,14 +38,10 @@
       .grilla .main .main_container1 .main_container1_titulo1 {
         font-size: calc(1.3125rem + 0.75vw);
         font-family: 'Playfair Display', serif;
-        color: #272727;
-        margin-top: calc(1.75rem + 6vw); }
+        color: #272727; }
         @media (min-width: 1200px) {
           .grilla .main .main_container1 .main_container1_titulo1 {
             font-size: 1.875rem; } }
-        @media (min-width: 1200px) {
-          .grilla .main .main_container1 .main_container1_titulo1 {
-            margin-top: 6.25rem; } }
 
 /*-------------------jquery 992px----------------------*/
 @media only screen and (max-width: 992px) {
@@ -44,9 +51,19 @@
 /*-------------------jquery 768px----------------------*/
 @media only screen and (max-width: 768px) {
   .grilla .main .parrafo {
-    font-size: 1em; } }
+    font-size: 10px; }
+  .grilla .main .main_container1 .main_container1_titulo1 {
+    font-size: calc(1.28125rem + 0.375vw); } }
+  @media only screen and (max-width: 768px) and (min-width: 1200px) {
+    .grilla .main .main_container1 .main_container1_titulo1 {
+      font-size: 1.5625rem; } }
 
 /*-------------------jquery 620px----------------------*/
 @media only screen and (max-width: 500px) {
+  .grilla .main .card {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem; }
   .grilla .main .parrafo {
-    font-size: 8px; } }
+    font-size: 6px; }
+  .grilla .main .main_container1 .main_container1_titulo1 {
+    font-size: 15px; } }

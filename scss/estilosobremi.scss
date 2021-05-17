@@ -13,7 +13,9 @@
     .main{
         grid-area: main;
         .card{
-            flex-direction: row!important;
+            @include margin-left (80px);
+            @include margin-right (80px);   
+            @include margin-top (30px);
         }
         .parrafo{
             @include font-size (25px);
@@ -33,10 +35,9 @@
             align-items: center;
 
             .main_container1_titulo1{            
-                @include font-size(30px);
+                @include font-size (30px);  
                 font-family: 'Playfair Display', serif;
                 color: rgb(39, 39, 39);
-                @include margin-top(100px);
             }
         }
     }
@@ -56,7 +57,13 @@
     .grilla{
         .main{
             .parrafo{
-                font-size: 1em;
+                font-size: 10px; 
+            }
+            .main_container1{
+                .main_container1_titulo1{            
+                    @include font-size (25px);
+
+                }
             }
         }
     }
@@ -65,8 +72,18 @@
 @media only screen and (max-width: 500px){
     .grilla{
         .main{
+            .card{
+                @include margin-left (15px);
+                @include margin-right (15px);  
+            }
             .parrafo{
-                font-size: 8px;
+                font-size: 6px;   
+            }
+            .main_container1{
+                .main_container1_titulo1{            
+                    font-size: 15px;  
+                
+                }
             }
         }
     }
