@@ -18,7 +18,7 @@ body{
         }
         .navbar-collapse{
             justify-content: center!important;
-        
+
             .sepMenu{
                 text-decoration: none;
                 color: rgb(19, 19, 19);
@@ -72,14 +72,18 @@ body{
 
             .imgFace{
                 height: auto;
-                width: 70px;
-                margin: 0;
+                width: 40px;
+                margin: 0 10px 0 0 ; 
+                border: 3px solid rgba(26, 25, 25, 0.911);
+                border-radius: 20px;
             }
 
             .imgInsta{
                 height: auto;
-                width: 52px;
+                width: 40px;
                 margin: 0;
+                border: 3px solid rgba(26, 25, 25, 0.911);
+                border-radius: 20px;
             }
         }
 
@@ -120,6 +124,7 @@ body{
                 .sepMenu{
                     display: block;
                     text-align:center;
+                    margin-right: 0;
                     @include margin-top(10px);
                     @include font-size (20px);
                 }
@@ -160,8 +165,8 @@ body{
             display: grid;
             grid-template-columns: 10% 80% 10%;
             grid-template-rows: 33% 34% 33%; 
-            grid-template-areas:    " . sigueme sigueme"
-                                    " . redes redes"
+            grid-template-areas:    " sigueme sigueme sigueme"
+                                    " . redes ."
                                     " ayuda firma firma"
             ;
 

@@ -2,14 +2,14 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 150px auto 134px;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header" "main" "footer";
   /*-------------------------------MAIN INDEX--------------------------------------*/ }
   #grilla #grillaMain {
     display: grid;
     margin-top: calc(1.3125rem + 0.75vw);
     grid-template-columns: 95%;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "a" "b" "c";
+    grid-template-areas: "a" "b" "c";
     justify-content: center;
     align-items: center; }
     @media (min-width: 1200px) {
@@ -70,4 +70,7 @@
       text-shadow: 0.1em 0.1em 0.05em #333; }
     #grilla #grillaMain .pItems {
       margin: 0;
-      font-size: 1.25rem; }
+      font-size: calc(1.28125rem + 0.375vw); }
+      @media (min-width: 1200px) {
+        #grilla #grillaMain .pItems {
+          font-size: 1.5625rem; } }

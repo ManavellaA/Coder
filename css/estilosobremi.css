@@ -20,13 +20,15 @@
         .grilla .main .card {
           margin-top: 1.875rem; } }
     .grilla .main .parrafo {
-      font-size: calc(1.28125rem + 0.375vw);
+      font-size: calc(1.26875rem + 0.225vw);
+      margin-left: 60px;
+      margin-right: 60px;
       font-family: 'Poppins', sans-serif;
       color: #575757;
       text-align: center; }
       @media (min-width: 1200px) {
         .grilla .main .parrafo {
-          font-size: 1.5625rem; } }
+          font-size: 1.4375rem; } }
     .grilla .main .alineacion {
       display: flex;
       align-items: center;
@@ -43,15 +45,24 @@
           .grilla .main .main_container1 .main_container1_titulo1 {
             font-size: 1.875rem; } }
 
+/*-------------------jquery 1200px----------------------*/
+@media only screen and (max-width: 1200px) {
+  .grilla .main .parrafo {
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 30px; } }
+
 /*-------------------jquery 992px----------------------*/
 @media only screen and (max-width: 992px) {
   .grilla .main .parrafo {
-    font-size: 1.1em; } }
+    font-size: 1em; } }
 
 /*-------------------jquery 768px----------------------*/
 @media only screen and (max-width: 768px) {
   .grilla .main .parrafo {
-    font-size: 10px; }
+    font-size: 10px;
+    margin-left: 4px;
+    margin-right: 4px; }
   .grilla .main .main_container1 .main_container1_titulo1 {
     font-size: calc(1.28125rem + 0.375vw); } }
   @media only screen and (max-width: 768px) and (min-width: 1200px) {
@@ -64,6 +75,6 @@
     margin-left: 0.9375rem;
     margin-right: 0.9375rem; }
   .grilla .main .parrafo {
-    font-size: 6px; }
+    font-size: 6.5px; }
   .grilla .main .main_container1 .main_container1_titulo1 {
     font-size: 15px; } }
