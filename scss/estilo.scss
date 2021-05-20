@@ -22,7 +22,8 @@ body{
             .sepMenu{
                 text-decoration: none;
                 color: rgb(19, 19, 19);
-                @include margin-right(40px);
+                justify-content: space-between;
+                margin: 15px;
                 font-family: "amiri";
                 @include font-size (18px);
                 transition: all, 400ms;
@@ -126,7 +127,7 @@ body{
                     text-align:center;
                     margin-right: 0;
                     @include margin-top(10px);
-                    @include font-size (20px);
+                    @include font-size (25px);
                 }
             }
         }        
@@ -155,7 +156,7 @@ body{
             .navbar-collapse{
            
                 .sepMenu{
-                    @include font-size (15px);
+                    @include font-size (18px);
                 }
             }
         }
