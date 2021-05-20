@@ -17,10 +17,11 @@
         h1{
             color: black;
             text-align: center;
+            @include font-size (30px);
         }
             /*-----------Galeria-----------*/
         .galeria{
-            width: 95%;
+            width: 100%;
             margin: auto;
             list-style: none;
             padding: 15px;  
@@ -34,7 +35,7 @@
             }
         
             img{
-                width: 15em;
+                width: 30vh;
                 height: auto;
             }
         }
@@ -69,11 +70,11 @@
                     color: white;
                     @include font-size (40px);
                     text-decoration: none;  
-                    margin: 0 10px;
+                    margin: 0 20px;
                     font-family: monospace;
                 
                     img{
-                        width: 550px;
+                        width: 60vh;
                         height: 100%;
                         max-width: 100%;
                         border: 7px solid#444;
@@ -92,12 +93,11 @@
                 font-family: monospace;
                 width: 25px;
                 height: 25px;
-                margin: 15px auto;
+                margin: 20px auto;
                 text-decoration: none;
                 text-align: center;
                 font-size: 25px;
                 color: black;
-                padding: 5px;
                 border-radius: 50%;
                 line-height: 25px;
             }
@@ -106,22 +106,17 @@
     }
 }
 
-/*-------------------jquery 1440px----------------------*/
+/*-------------------jquery 1440px---------------------*/
 @media only screen and (max-width: 1440px){
     #grilla{
          /*-----------MAIN INDEX-----------*/
         .main{
                 /*-----------Galeria-----------*/
-            .galeria{
-                img{
-                    width: 10em;
-                }
-            }
             .modal:target{
                 .imagen{
                     a{
                         img{
-                            width: 300px;
+                            width: 53vh;
                         }
                     }
                 }
@@ -159,22 +154,15 @@
     #grilla{
          /*-----------MAIN INDEX-----------*/
         .main{
+            h1{
+                font-size: 22px;
+            }
                 /*-----------Galeria-----------*/
             .galeria{
                 img{
                     width: 7em;
                 }
             }
-            .modal:target{
-                .imagen{
-                    a{
-                        img{
-                            width: 50vh;
-                        }
-                    }
-                }
-            }
         }
     }
 }
-

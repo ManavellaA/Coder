@@ -11,9 +11,13 @@
     /*-----------Modal-----------*/ }
     #grilla .main h1 {
       color: black;
-      text-align: center; }
+      text-align: center;
+      font-size: calc(1.3125rem + 0.75vw); }
+      @media (min-width: 1200px) {
+        #grilla .main h1 {
+          font-size: 1.875rem; } }
     #grilla .main .galeria {
-      width: 95%;
+      width: 100%;
       margin: auto;
       list-style: none;
       padding: 15px;
@@ -24,7 +28,7 @@
       #grilla .main .galeria li {
         margin: 20px 10px 10px 20px; }
       #grilla .main .galeria img {
-        width: 15em;
+        width: 30vh;
         height: auto; }
     #grilla .main .modal {
       display: none; }
@@ -52,13 +56,13 @@
           color: white;
           font-size: calc(1.375rem + 1.5vw);
           text-decoration: none;
-          margin: 0 10px;
+          margin: 0 20px;
           font-family: monospace; }
           @media (min-width: 1200px) {
             #grilla .main .modal:target .imagen a {
               font-size: 2.5rem; } }
           #grilla .main .modal:target .imagen a img {
-            width: 550px;
+            width: 60vh;
             height: 100%;
             max-width: 100%;
             border: 7px solid #444;
@@ -73,25 +77,22 @@
         font-family: monospace;
         width: 25px;
         height: 25px;
-        margin: 15px auto;
+        margin: 20px auto;
         text-decoration: none;
         text-align: center;
         font-size: 25px;
         color: black;
-        padding: 5px;
         border-radius: 50%;
         line-height: 25px; }
 
-/*-------------------jquery 1440px----------------------*/
+/*-------------------jquery 1440px---------------------*/
 @media only screen and (max-width: 1440px) {
   #grilla {
     /*-----------MAIN INDEX-----------*/ }
     #grilla .main {
       /*-----------Galeria-----------*/ }
-      #grilla .main .galeria img {
-        width: 10em; }
       #grilla .main .modal:target .imagen a img {
-        width: 300px; } }
+        width: 53vh; } }
 
 /*-------------------jquery 768px----------------------*/
 @media only screen and (max-width: 768px) {
@@ -110,7 +111,7 @@
     /*-----------MAIN INDEX-----------*/ }
     #grilla .main {
       /*-----------Galeria-----------*/ }
+      #grilla .main h1 {
+        font-size: 22px; }
       #grilla .main .galeria img {
-        width: 7em; }
-      #grilla .main .modal:target .imagen a img {
-        width: 50vh; } }
+        width: 7em; } }
