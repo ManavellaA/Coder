@@ -100,9 +100,9 @@
     #grilla .main {
       /*-----------Galeria-----------*/ }
       #grilla .main .galeria img {
-        width: 8em; }
+        width: 9em; }
       #grilla .main .modal:target .imagen a img {
-        width: 200px; } }
+        width: 50vh; } }
 
 /*-------------------jquery 500px----------------------*/
 @media only screen and (max-width: 500px) {
@@ -111,6 +111,6 @@
     #grilla .main {
       /*-----------Galeria-----------*/ }
       #grilla .main .galeria img {
-        width: 6em; }
+        width: 7em; }
       #grilla .main .modal:target .imagen a img {
-        width: 200px; } }
+        width: 50vh; } }
