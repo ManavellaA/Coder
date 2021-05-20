@@ -30,7 +30,7 @@ body{
             }
                 .sepMenu:hover{
                     color: crimson;
-                }    
+                }
         }    
     }
     /*-----------------FOOTER----------------*/
@@ -175,6 +175,10 @@ body{
                 font-size: 16px;
             }
 
+            #ayuda{
+                align-items:flex-end;
+            }
+            
             #firma{
                 margin-bottom: 0;
             }

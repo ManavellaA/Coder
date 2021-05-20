@@ -128,5 +128,7 @@ body {
       grid-template-areas: " sigueme sigueme sigueme" " . redes ." " ayuda firma firma"; }
       body #footer #sigueme {
         font-size: 16px; }
+      body #footer #ayuda {
+        align-items: flex-end; }
       body #footer #firma {
         margin-bottom: 0; } }
