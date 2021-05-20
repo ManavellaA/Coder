@@ -26,7 +26,7 @@ body {
         font-size: 1.125rem;
         transition: all, 400ms; }
       body #header .navbar-collapse .sepMenu:hover {
-        color: crimson; }
+        color: #da3254; }
   body #footer {
     grid-area: footer;
     margin-top: calc(1.3125rem + 0.75vw);
