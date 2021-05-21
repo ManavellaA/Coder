@@ -83,7 +83,7 @@
           
             justify-content: center;
             align-items: center;
-            text-align: center;
+            text-align: start;
             @include font-size(25px);
             margin-top: 100px;
             color: rgb(87, 87, 87);
@@ -166,8 +166,13 @@
         
             /*-------------------MAIN INDEX----------------------*/
         #mainIndex{
+            .seccion2_titulo{  
+                font-size: 17px;
+                text-align: center;
+            }
             .seccion2_parrafo{
                 font-size: 15px;
+                margin:15px 30px 16px 30px ;
             }
         }
     }

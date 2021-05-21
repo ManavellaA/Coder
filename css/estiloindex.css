@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 150px auto 134px;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header" "main" "footer";
   /*-------------------MAIN INDEX----------------------*/ }
   #grilla #mainIndex {
     grid-area: main;
@@ -13,7 +13,7 @@
       display: grid;
       grid-template-columns: 100%;
       grid-template-rows: 20% 20% 60%;
-      grid-template-areas: "titulo1" "titulo2" "prologo"; }
+      grid-template-areas: "titulo1" "titulo2" "prologo"; }
       #grilla #mainIndex #bienvenida #titulo1 {
         grid-area: titulo1;
         display: flex;
@@ -84,7 +84,7 @@
     #grilla #mainIndex .seccion2_parrafo {
       justify-content: center;
       align-items: center;
-      text-align: center;
+      text-align: start;
       font-size: calc(1.28125rem + 0.375vw);
       margin-top: 100px;
       color: #575757;
@@ -149,5 +149,9 @@
 @media only screen and (max-width: 500px) {
   #grilla {
     /*-------------------MAIN INDEX----------------------*/ }
+    #grilla #mainIndex .seccion2_titulo {
+      font-size: 17px;
+      text-align: center; }
     #grilla #mainIndex .seccion2_parrafo {
-      font-size: 15px; } }
+      font-size: 15px;
+      margin: 15px 30px 16px 30px; } }
