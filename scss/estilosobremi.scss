@@ -72,9 +72,12 @@
     .grilla{
         .main{
             .parrafo{
-                font-size: 10px; 
+                font-size: 14px; 
                 margin-left: 4px;
                 margin-right: 4px;
+            }
+            .card-body{
+                padding: 10px;
             }
             .main_container1{
                 .main_container1_titulo1{            
@@ -86,7 +89,7 @@
     }
 }
 /*-------------------jquery 620px----------------------*/
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 620px){
     .grilla{
         .main{
             .card{
@@ -94,7 +97,32 @@
                 @include margin-right (15px);  
             }
             .parrafo{
-                font-size: 6.5px; 
+                font-size: 12px; 
+            }
+            .main_container1{
+                .main_container1_titulo1{            
+                    font-size: 15px;  
+                
+                }
+            }
+        }
+    }
+}
+/*-------------------jquery 450px----------------------*/
+@media only screen and (max-width: 450px){
+    .grilla{
+        .main{
+            .card{
+                @include margin-left (10px);
+                @include margin-right (10px);  
+            }
+            .parrafo{
+                font-size: 9px; 
+                margin-bottom: 4px;
+            }
+
+            .card-body{
+                padding: 5px;
             }
             .main_container1{
                 .main_container1_titulo1{            
