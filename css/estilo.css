@@ -101,6 +101,8 @@ body {
         margin-right: 0;
         margin-top: 0.625rem;
         font-size: calc(1.28125rem + 0.375vw);
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
         background: #e0e0e03b; } }
       @media only screen and (max-width: 1199px) and (min-width: 1200px) {
         body #header .navbar-collapse .sepMenu {
@@ -121,7 +123,9 @@ body {
     body #header .marca {
       margin-left: 0 !important; }
     body #header .navbar-collapse .sepMenu {
-      font-size: 1.125rem; }
+      font-size: 1.125rem;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem; }
     body #footer {
       display: grid;
       grid-template-columns: 10% 80% 10%;

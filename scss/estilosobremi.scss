@@ -3,7 +3,7 @@
 .grilla{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px auto 134px;
+    grid-template-rows: 100px auto 134px;
     grid-template-areas:    "header"
                             "main"
                             "footer";
@@ -31,19 +31,21 @@
             justify-content: center;
         }
 
-        .main_container1{
-            display: flex;
-            justify-content:center;
-            align-items: center;
-
-            .main_container1_titulo1{            
-                @include font-size (30px);  
+            .main_titulo1{
+                display: flex;
+                justify-content: center;     
+                @include font-size (40px);  
                 font-family: 'Playfair Display', serif;
                 color: rgb(39, 39, 39);
-                @include margin-top (30px) ;
-                @include margin-bottom (30px) ; 
+                @include margin-top (40px) ;
+                @include margin-bottom (20px) ; 
+                @include padding-top (60px);
+                @include padding-bottom (60px);
+                background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
+                margin-block-start: 0;
+                margin-block-end: 0;
             }
-        }
+        
     }
 }
 
@@ -81,12 +83,12 @@
             .card-body{
                 padding: 10px;
             }
-            .main_container1{
-                .main_container1_titulo1{            
-                    @include font-size (25px);
+            
+                .main_titulo1{            
+                    @include font-size (30px);
 
                 }
-            }
+            
         }
     }
 }
@@ -101,12 +103,12 @@
             .parrafo{
                 font-size: 12px; 
             }
-            .main_container1{
-                .main_container1_titulo1{            
+            
+                .main_titulo1{            
                     font-size: 20px;  
                 
                 }
-            }
+            
         }
     }
 }
