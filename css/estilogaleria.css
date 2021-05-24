@@ -16,7 +16,7 @@
       margin-top: calc(1.4375rem + 2.25vw);
       padding-top: calc(1.3125rem + 0.75vw);
       padding-bottom: calc(1.3125rem + 0.75vw);
-      background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(99, 10, 10, 0.05) 100%); }
+      background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%); }
       @media (min-width: 1200px) {
         #grilla .main .titulo1 {
           font-size: 1.875rem; } }
@@ -37,7 +37,7 @@
       margin-bottom: 0.625rem;
       padding-top: calc(1.3125rem + 0.75vw);
       padding-bottom: calc(1.3125rem + 0.75vw);
-      background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(99, 10, 10, 0.05) 100%); }
+      background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%); }
       @media (min-width: 1200px) {
         #grilla .main .titulo2 {
           font-size: 1.875rem; } }

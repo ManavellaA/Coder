@@ -75,14 +75,16 @@
 
         .seccion2_titulo{  
             grid-area: titulo;
+            background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(0, 0, 0, 0.05) 100%);
             display: flex;
             font-family: "amiri" bold;
             --bs-gutter-y: none;
             align-items: center;
             justify-content: center;
             @include font-size(35px);
-            @include margin-left(40px);
-            @include margin-right(40px);
+            @include padding-top (30px);
+            @include padding-bottom (30px);
+
         }
         .seccion2_parrafo{
           
