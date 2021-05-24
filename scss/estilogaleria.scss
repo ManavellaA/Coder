@@ -3,7 +3,7 @@
 #grilla{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px auto 134px;
+    grid-template-rows: 100px auto 134px;
     grid-template-areas:    "header"
                             "main"
                             "footer";
@@ -14,11 +14,27 @@
         grid-area: main; 
         margin: 0;
     
-        h1{
-            color: black;
-            text-align: center;
-            @include font-size (30px);
-        }
+            .titulo1{
+                color: black;
+                text-align: center;
+                @include font-size (30px);
+                @include margin-top (50px);
+                @include padding-top (30px);
+                @include padding-bottom (30px);
+                background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(99, 10, 10, 0.05) 100%);
+            }
+
+            .titulo2{
+                color: black;
+                text-align: center;
+                @include font-size (30px);
+                @include margin-top (50px);
+                @include margin-bottom (10px);
+                @include padding-top (30px);
+                @include padding-bottom (30px);
+                background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(99, 10, 10, 0.05) 100%);
+            }
+        
             /*-----------Galeria-----------*/
         .galeria{
             width: 100%;

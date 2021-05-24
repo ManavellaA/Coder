@@ -1,7 +1,7 @@
 #grilla {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 150px auto 134px;
+  grid-template-rows: 100px auto 134px;
   grid-template-areas: "header" "main" "footer";
   /*-----------MAIN INDEX-----------*/ }
   #grilla .main {
@@ -9,13 +9,47 @@
     margin: 0;
     /*-----------Galeria-----------*/
     /*-----------Modal-----------*/ }
-    #grilla .main h1 {
+    #grilla .main .titulo1 {
       color: black;
       text-align: center;
-      font-size: calc(1.3125rem + 0.75vw); }
+      font-size: calc(1.3125rem + 0.75vw);
+      margin-top: calc(1.4375rem + 2.25vw);
+      padding-top: calc(1.3125rem + 0.75vw);
+      padding-bottom: calc(1.3125rem + 0.75vw);
+      background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(99, 10, 10, 0.05) 100%); }
       @media (min-width: 1200px) {
-        #grilla .main h1 {
+        #grilla .main .titulo1 {
           font-size: 1.875rem; } }
+      @media (min-width: 1200px) {
+        #grilla .main .titulo1 {
+          margin-top: 3.125rem; } }
+      @media (min-width: 1200px) {
+        #grilla .main .titulo1 {
+          padding-top: 1.875rem; } }
+      @media (min-width: 1200px) {
+        #grilla .main .titulo1 {
+          padding-bottom: 1.875rem; } }
+    #grilla .main .titulo2 {
+      color: black;
+      text-align: center;
+      font-size: calc(1.3125rem + 0.75vw);
+      margin-top: calc(1.4375rem + 2.25vw);
+      margin-bottom: 0.625rem;
+      padding-top: calc(1.3125rem + 0.75vw);
+      padding-bottom: calc(1.3125rem + 0.75vw);
+      background: radial-gradient(circle, rgba(255, 0, 38, 0.05) 0%, rgba(99, 10, 10, 0.05) 100%); }
+      @media (min-width: 1200px) {
+        #grilla .main .titulo2 {
+          font-size: 1.875rem; } }
+      @media (min-width: 1200px) {
+        #grilla .main .titulo2 {
+          margin-top: 3.125rem; } }
+      @media (min-width: 1200px) {
+        #grilla .main .titulo2 {
+          padding-top: 1.875rem; } }
+      @media (min-width: 1200px) {
+        #grilla .main .titulo2 {
+          padding-bottom: 1.875rem; } }
     #grilla .main .galeria {
       width: 100%;
       margin: auto;
