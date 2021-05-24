@@ -3,7 +3,7 @@
 #grilla{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px auto 134px;
+    grid-template-rows: 100px auto 134px;
     grid-template-areas:    "header"
                             "main"
                             "footer";
@@ -17,50 +17,54 @@
             --bs-gutter-x: 0;
         }
 
-        #bienvenida{
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 20% 20% 60%;
-            grid-template-areas:    "titulo1"
-                                    "titulo2"
-                                    "prologo"
-        ;
-        
-            #titulo1{
-                grid-area: titulo1;
-                display: flex;
-                justify-content: center;
-                align-items: flex-end;
-                @include font-size(80px);
-                font-family: 'Playfair Display', serif;
-                margin: 0;
+        .mediaQ{
+            align-items: center;
+
+            #bienvenida{
+                display: grid;
+                grid-template-columns: 100%;
+                grid-template-rows: 20% 20% 60%;
+                grid-template-areas:    "titulo1"
+                                        "titulo2"
+                                        "prologo"
+            ;
+            
+                #titulo1{
+                    grid-area: titulo1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    @include font-size(80px);
+                    font-family: 'Playfair Display', serif;
+                    margin: 0;
+                }
+                #titulo2{
+                    grid-area: titulo2;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include font-size(100px);
+                    font-family: 'Playfair Display', serif;
+                    margin: 0;
+                }
+                .prologo{
+                    grid-area: prologo;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    text-align: left;
+                    @include font-size(25px);
+                    @include margin-top(30px);
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    color: rgb(87, 87, 87);
+                    font-family: "amiri";
+                }
+            } 
+
+            .img_1{
+                @include margin-top(20px);
             }
-            #titulo2{
-                grid-area: titulo2;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                @include font-size(100px);
-                font-family: 'Playfair Display', serif;
-                margin: 0;
-            }
-            .prologo{
-                grid-area: prologo;
-                display: flex;
-                justify-content: center;
-                align-items: flex-start;
-                text-align: left;
-                @include font-size(25px);
-                @include margin-top(30px);
-                margin-left: 50px;
-                margin-right: 50px;
-                color: rgb(87, 87, 87);
-                font-family: "amiri";
-            }
-        } 
-        
-        .img_1{
-            @include margin-top(20px);
         }
 
         .seccion2{
@@ -72,12 +76,13 @@
         .seccion2_titulo{  
             grid-area: titulo;
             display: flex;
-            justify-self: center;
-            align-self: center;
-            font-family: "amiri"bold;
+            font-family: "amiri" bold;
+            --bs-gutter-y: none;
+            align-items: center;
+            justify-content: center;
             @include font-size(35px);
-            @include margin-left(50px);
-            @include margin-right(50px);
+            @include margin-left(40px);
+            @include margin-right(40px);
         }
         .seccion2_parrafo{
           
@@ -109,7 +114,7 @@
 /*-------------------jquery 1200px----------------------*/
 @media only screen and (max-width: 1200px){
     #grilla{
-        grid-template-rows: 120px auto 134px;
+        grid-template-rows: 100px auto 120px;
     /*-------------------MAIN INDEX----------------------*/
         #mainIndex{
             margin-top: 15px;
@@ -140,7 +145,7 @@
 /*-------------------jquery 768px----------------------*/
 @media only screen and (max-width: 768px){
     #grilla{
-        grid-template-rows: 110px auto 134px;
+        grid-template-rows: 80px auto 120px;
             /*-------------------MAIN INDEX----------------------*/
         #mainIndex{
             .mediaQ{

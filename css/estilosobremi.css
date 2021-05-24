@@ -40,10 +40,18 @@
       .grilla .main .main_container1 .main_container1_titulo1 {
         font-size: calc(1.3125rem + 0.75vw);
         font-family: 'Playfair Display', serif;
-        color: #272727; }
+        color: #272727;
+        margin-top: calc(1.3125rem + 0.75vw);
+        margin-bottom: calc(1.3125rem + 0.75vw); }
         @media (min-width: 1200px) {
           .grilla .main .main_container1 .main_container1_titulo1 {
             font-size: 1.875rem; } }
+        @media (min-width: 1200px) {
+          .grilla .main .main_container1 .main_container1_titulo1 {
+            margin-top: 1.875rem; } }
+        @media (min-width: 1200px) {
+          .grilla .main .main_container1 .main_container1_titulo1 {
+            margin-bottom: 1.875rem; } }
 
 /*-------------------jquery 1200px----------------------*/
 @media only screen and (max-width: 1200px) {
@@ -79,7 +87,7 @@
   .grilla .main .parrafo {
     font-size: 12px; }
   .grilla .main .main_container1 .main_container1_titulo1 {
-    font-size: 15px; } }
+    font-size: 20px; } }
 
 /*-------------------jquery 450px----------------------*/
 @media only screen and (max-width: 450px) {

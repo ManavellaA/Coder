@@ -1,7 +1,7 @@
 #grilla {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 150px auto 134px;
+  grid-template-rows: 100px auto 134px;
   grid-template-areas: "header" "main" "footer";
   /*-------------------MAIN INDEX----------------------*/ }
   #grilla #mainIndex {
@@ -9,53 +9,55 @@
     margin-top: 50px; }
     #grilla #mainIndex .row {
       --bs-gutter-x: 0; }
-    #grilla #mainIndex #bienvenida {
-      display: grid;
-      grid-template-columns: 100%;
-      grid-template-rows: 20% 20% 60%;
-      grid-template-areas: "titulo1" "titulo2" "prologo"; }
-      #grilla #mainIndex #bienvenida #titulo1 {
-        grid-area: titulo1;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        font-size: calc(1.625rem + 4.5vw);
-        font-family: 'Playfair Display', serif;
-        margin: 0; }
-        @media (min-width: 1200px) {
-          #grilla #mainIndex #bienvenida #titulo1 {
-            font-size: 5rem; } }
-      #grilla #mainIndex #bienvenida #titulo2 {
-        grid-area: titulo2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: calc(1.75rem + 6vw);
-        font-family: 'Playfair Display', serif;
-        margin: 0; }
-        @media (min-width: 1200px) {
-          #grilla #mainIndex #bienvenida #titulo2 {
-            font-size: 6.25rem; } }
-      #grilla #mainIndex #bienvenida .prologo {
-        grid-area: prologo;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        text-align: left;
-        font-size: calc(1.28125rem + 0.375vw);
-        margin-top: calc(1.3125rem + 0.75vw);
-        margin-left: 50px;
-        margin-right: 50px;
-        color: #575757;
-        font-family: "amiri"; }
-        @media (min-width: 1200px) {
-          #grilla #mainIndex #bienvenida .prologo {
-            font-size: 1.5625rem; } }
-        @media (min-width: 1200px) {
-          #grilla #mainIndex #bienvenida .prologo {
-            margin-top: 1.875rem; } }
-    #grilla #mainIndex .img_1 {
-      margin-top: 1.25rem; }
+    #grilla #mainIndex .mediaQ {
+      align-items: center; }
+      #grilla #mainIndex .mediaQ #bienvenida {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 60%;
+        grid-template-areas: "titulo1" "titulo2" "prologo"; }
+        #grilla #mainIndex .mediaQ #bienvenida #titulo1 {
+          grid-area: titulo1;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          font-size: calc(1.625rem + 4.5vw);
+          font-family: 'Playfair Display', serif;
+          margin: 0; }
+          @media (min-width: 1200px) {
+            #grilla #mainIndex .mediaQ #bienvenida #titulo1 {
+              font-size: 5rem; } }
+        #grilla #mainIndex .mediaQ #bienvenida #titulo2 {
+          grid-area: titulo2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: calc(1.75rem + 6vw);
+          font-family: 'Playfair Display', serif;
+          margin: 0; }
+          @media (min-width: 1200px) {
+            #grilla #mainIndex .mediaQ #bienvenida #titulo2 {
+              font-size: 6.25rem; } }
+        #grilla #mainIndex .mediaQ #bienvenida .prologo {
+          grid-area: prologo;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          text-align: left;
+          font-size: calc(1.28125rem + 0.375vw);
+          margin-top: calc(1.3125rem + 0.75vw);
+          margin-left: 50px;
+          margin-right: 50px;
+          color: #575757;
+          font-family: "amiri"; }
+          @media (min-width: 1200px) {
+            #grilla #mainIndex .mediaQ #bienvenida .prologo {
+              font-size: 1.5625rem; } }
+          @media (min-width: 1200px) {
+            #grilla #mainIndex .mediaQ #bienvenida .prologo {
+              margin-top: 1.875rem; } }
+      #grilla #mainIndex .mediaQ .img_1 {
+        margin-top: 1.25rem; }
     #grilla #mainIndex .seccion2 {
       margin-top: calc(1.75rem + 6vw);
       align-items: center;
@@ -66,21 +68,22 @@
     #grilla #mainIndex .seccion2_titulo {
       grid-area: titulo;
       display: flex;
-      justify-self: center;
-      align-self: center;
-      font-family: "amiri"bold;
+      font-family: "amiri" bold;
+      --bs-gutter-y: none;
+      align-items: center;
+      justify-content: center;
       font-size: calc(1.34375rem + 1.125vw);
-      margin-left: calc(1.4375rem + 2.25vw);
-      margin-right: calc(1.4375rem + 2.25vw); }
+      margin-left: calc(1.375rem + 1.5vw);
+      margin-right: calc(1.375rem + 1.5vw); }
       @media (min-width: 1200px) {
         #grilla #mainIndex .seccion2_titulo {
           font-size: 2.1875rem; } }
       @media (min-width: 1200px) {
         #grilla #mainIndex .seccion2_titulo {
-          margin-left: 3.125rem; } }
+          margin-left: 2.5rem; } }
       @media (min-width: 1200px) {
         #grilla #mainIndex .seccion2_titulo {
-          margin-right: 3.125rem; } }
+          margin-right: 2.5rem; } }
     #grilla #mainIndex .seccion2_parrafo {
       justify-content: center;
       align-items: center;
@@ -117,7 +120,7 @@
 /*-------------------jquery 1200px----------------------*/
 @media only screen and (max-width: 1200px) {
   #grilla {
-    grid-template-rows: 120px auto 134px;
+    grid-template-rows: 100px auto 120px;
     /*-------------------MAIN INDEX----------------------*/ }
     #grilla #mainIndex {
       margin-top: 15px; }
@@ -135,7 +138,7 @@
 /*-------------------jquery 768px----------------------*/
 @media only screen and (max-width: 768px) {
   #grilla {
-    grid-template-rows: 110px auto 134px;
+    grid-template-rows: 80px auto 120px;
     /*-------------------MAIN INDEX----------------------*/ }
     #grilla #mainIndex .mediaQ #bienvenida {
       grid-template-rows: 20% 20% 60%; }
