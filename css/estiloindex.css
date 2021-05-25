@@ -10,7 +10,8 @@
     #grilla #mainIndex .row {
       --bs-gutter-x: 0; }
     #grilla #mainIndex .mediaQ {
-      align-items: center; }
+      align-items: center;
+      justify-content: center; }
       #grilla #mainIndex .mediaQ #bienvenida {
         display: grid;
         grid-template-columns: 100%;
