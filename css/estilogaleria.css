@@ -12,6 +12,7 @@
     #grilla .main .titulo1 {
       color: black;
       text-align: center;
+      font-family: 'Playfair Display', serif;
       font-size: calc(1.3125rem + 0.75vw);
       margin-top: calc(1.4375rem + 2.25vw);
       padding-top: calc(1.3125rem + 0.75vw);
@@ -32,6 +33,7 @@
     #grilla .main .titulo2 {
       color: black;
       text-align: center;
+      font-family: 'Playfair Display', serif;
       font-size: calc(1.3125rem + 0.75vw);
       margin-top: calc(1.4375rem + 2.25vw);
       margin-bottom: 0.625rem;

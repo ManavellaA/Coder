@@ -93,14 +93,14 @@
       margin-top: 100px;
       color: #575757;
       font-family: "amiri";
-      margin-left: calc(1.4375rem + 2.25vw);
+      margin-left: calc(1.625rem + 4.5vw);
       margin-right: calc(1.75rem + 6vw); }
       @media (min-width: 1200px) {
         #grilla #mainIndex .seccion2_parrafo {
           font-size: 1.5625rem; } }
       @media (min-width: 1200px) {
         #grilla #mainIndex .seccion2_parrafo {
-          margin-left: 3.125rem; } }
+          margin-left: 5rem; } }
       @media (min-width: 1200px) {
         #grilla #mainIndex .seccion2_parrafo {
           margin-right: 6.25rem; } }

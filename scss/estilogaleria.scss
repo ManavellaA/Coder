@@ -17,6 +17,7 @@
             .titulo1{
                 color: black;
                 text-align: center;
+                font-family: 'Playfair Display', serif;
                 @include font-size (30px);
                 @include margin-top (50px);
                 @include padding-top (30px);
@@ -27,6 +28,7 @@
             .titulo2{
                 color: black;
                 text-align: center;
+                font-family: 'Playfair Display', serif;
                 @include font-size (30px);
                 @include margin-top (50px);
                 @include margin-bottom (10px);
